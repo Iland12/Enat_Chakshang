@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Toggle Menu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+    }
+
+    .menu-toggle {
+      display: none;
+    }
+
+    .menu-btn {
+      display: inline-block;
+      background-color: #333;
+      color: white;
+      padding: 10px 15px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    .nav-menu {
+      display: none;
+      margin-top: 10px;
+      background: #f0f0f0;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    .nav-menu a {
+      display: block;
+      padding: 8px 0;
+      text-decoration: none;
+      color: #333;
+    }
+
+    /* Show menu when checkbox is checked */
+    .menu-toggle:checked + .menu-btn + .nav-menu {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+  <label for="menu-toggle" class="menu-btn">☰ Menu</label>
+
+  <div class="nav-menu">
+    <a href="#">Home</a>
+    <a href="#">About</a>
+    <a href="#">Services</a>
+    <a href="#">Contact</a>
+  </div>
+
+</body>
+</html>
