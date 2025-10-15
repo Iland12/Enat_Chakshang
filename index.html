@@ -26,6 +26,8 @@
         width: 100%;
         margin: 0;
         padding: 0;
+      }
+      .header {
         overflow-x: hidden;
       }
       .material-icons {
@@ -147,7 +149,6 @@
         background-color: rgb(255, 149, 0);
         color: white;
       }
-
       .food-container > h3 {
         width: 12.5rem;
         height: 2.6rem;
@@ -161,9 +162,11 @@
         border-radius: 2rem;
         border-bottom: 0.16rem solid black;
         position: relative;
-        top: -1.9rem;
+        top: -2.5rem;
       }
       .food-container > a {
+        width: 5.5rem;
+        height: 2.4rem;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -206,6 +209,9 @@
         text-align: center;
         line-height: 4rem;
         margin-top: 2rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
       }
       .social {
         font-size: 1rem;
@@ -491,6 +497,13 @@
           align-items: center;
           top: 0.3rem;
         }
+        .food-container > h1 {
+          white-space: nowrap;
+          font-size: 1.3rem;
+          width: 10rem;
+          height: 4rem;
+        }
+
         .food-container h3 {
           width: 4rem;
           height: 1.5rem;
@@ -531,6 +544,95 @@
         }
         .social i {
           font-size: 1.8rem;
+        }
+      }
+
+      @media (max-width: 390px) {
+        #one {
+          padding: 1rem 2rem;
+          font-size: 1rem;
+          position: relative;
+          left: 1rem;
+          top: 0rem;
+          /* display: none; */
+        }
+        input {
+          top: 0rem;
+          left: 0.8rem;
+          margin: 0 2.5rem;
+          font-size: 0.8rem;
+          /* display: none; */
+        }
+        .material-icons {
+          display: block;
+          font-size: 1.25rem;
+          top: 0px;
+          right: 1.2rem;
+          /* display: none; */
+        }
+        nav {
+          height: 1rem;
+        }
+        nav ul {
+          gap: 0.8rem;
+          position: relative;
+          top: 0.5rem;
+          right: 3rem;
+        }
+        ul > a {
+          font-size: 0.8rem;
+          position: relative;
+          top: -0.4rem;
+        }
+        .intro {
+          width: 47%;
+          margin: 0.6rem 0.7rem;
+          font-size: 0.4rem;
+        }
+        .intro p {
+          font-size: 0.5rem;
+        }
+        #menu {
+          width: 6rem;
+          height: 3rem;
+          font-size: 0.43rem;
+          left: 60%;
+          top: 11rem;
+        }
+        #menu option {
+          font-size: 0.5rem;
+          padding: 0px;
+        }
+        .menu {
+          height: 11rem;
+        }
+        .food-container > h1 {
+          width: 7rem;
+          height: 2.5rem;
+          font-size: 1rem;
+        }
+        .bn {
+          padding: 0;
+          width: 6rem;
+          height: 2rem;
+          font-size: 1rem;
+          left: 0.3rem;
+        }
+
+        .food-container h3 {
+          width: 4rem;
+          height: 1rem;
+          font-size: 0.8rem;
+          top: -3.3rem;
+          left: -1.5rem;
+        }
+        .food-container a {
+          font-size: 1rem;
+          width: 6rem;
+          height: 2rem;
+          top: -3.8rem;
+          left: 7rem;
+          padding: 0;
         }
       }
     </style>
